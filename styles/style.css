@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;300;400;700&display=swap');
+/* font-family: 'Smooch Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+:root {
+  --light-gray: #d1d5d8;
+  --blue-first: #3498db;
+  --red-first: #e74c3c;
+  --dark-yellow: #f1c40f;
+  --green-positive: #1abc9c;
+  --dark: #191818;
+  --darker: #2d2c2c;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-size: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  color: var(--white);
+  height: 100vh;
+}
+
+header {
+  font-family: 'Smooch Sans', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+
+  background-color: var(--dark-yellow);
+  box-shadow: 0px 0px 7px #fff;
+  color: black;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 350px;
+  background-color: var(--darker);
+  padding: 10px;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+footer {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+
+  background-color: var(--dark-yellow);
+  width: 100%;
+  margin-top: 10px;
+  color: black;
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--dark-yellow);
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  width: 100%;
+}
+
+#inputTarefa {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--dark);
+  font-size: 1rem;
+  background-color: var(--dark);
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+#inputTarefa:focus {
+  border: 1px solid var(--green-positive);
+}
+
+#adicionarTarefa {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+  background-color: var(--dark);
+  cursor: pointer;
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+#adicionarTarefa:hover {
+  opacity: 0.7;
+}
+
+.listas {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.listas ul {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.listas ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: var(--dark);
+  height: 50px;
+}
+
+.botoesAcaoTarefa button {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.editar {
+  background-color: var(--blue-first);
+  transition: all 0.5s;
+  color: var(--white);
+}
+.editar:hover {
+  opacity: 0.8;
+}
+.excluir {
+  background-color: var(--red-first);
+  transition: all 0.5s;
+  color: var(--white);
+}
+.excluir:hover {
+  opacity: 0.8;
+}

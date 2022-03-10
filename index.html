@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <span>Lista de tarefa</span>
+    </header>
+    <main>
+      <section class="title">
+        <span>Lista</span>
+      </section>
+      <section class="inputs">
+        <input
+          type="text"
+          id="inputTarefa"
+          data-index="new"
+          placeholder="Digite uma tarefa"
+          required
+        />
+        <button id="adicionarTarefa"><i class="fa fa-plus"></i></button>
+      </section>
+      <section class="listas">
+        <ul id="listaTarefas">
+          <!-- <li>
+            <div class="itemTarefa">
+              <span>Nova Tarefa 1</span>
+            </div>
+            <div class="botoesAcaoTarefa">
+              <button class="editar"><i class="fa fa-edit"></i></button>
+              <button class="excluir"><i class="fa fa-trash"></i></button>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <span>Copyright &copy; 2022 - Wellington</span>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
